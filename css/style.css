@@ -10,7 +10,7 @@ body{
     height:26%;
     position: absolute;
     left: 38%;
-    top: 17%;
+    top: 33%;
     z-index: 1;
   }
   
@@ -42,6 +42,7 @@ body{
   
   div.title {
     position: absolute;
+    opacity: 0;
     top:18%;
     width: 100%; 
     text-align:center;
