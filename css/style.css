@@ -30,7 +30,7 @@ body{
     height:26%;
     position: absolute;
     left: 38%;
-    top: 33%;
+    top: 30%;
     z-index: 1;
   }
 
@@ -78,7 +78,7 @@ body{
       width: 100%;
       position: absolute;
       top: 30%;
-      opacity: 0.8;
+      opacity: 0.9;
   }
   .extra-block{
     width: 100px;
@@ -91,7 +91,7 @@ body{
   .belly{
     width: 150px;
     height: 150px;
-    top: 60%;
+    top: 56%;
     left: 50%;
   }
   .left-hand{
@@ -99,16 +99,16 @@ body{
     left: 14%;
   }
   .right-hand{
-    top: 65%;
+    top: 59%;
     left: 72%;
   }
   .shy{
-    top: 72%;
+    top: 65%;
     left: 49%;
     z-index: 3;
   }
   .shy-text{
-    top: 72%;
+    top: 65%;
     left: 49%;
     background: #fff;
     border-radius: 50%;

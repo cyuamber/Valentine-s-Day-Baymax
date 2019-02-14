@@ -14,7 +14,7 @@ function clickBody (part) {
     }
 }
 function showBellyToast () {
-    toastr.error('该减肥了～');
+    toastr.warning('Belly belly～');
 }
 function showleftHandsToast () {
     toastr.success('Hello World!');
@@ -24,6 +24,6 @@ function showrightHandsToast () {
 }
 function showShyToast () {
     $("#secret-block").animate({ opacity: 1 }, "slow", "swing");
-    toastr.warning('羞羞的～');
+    toastr.error('羞羞的～');
     $("#secret-block").animate({ opacity: 0 }, "slow");
 }
