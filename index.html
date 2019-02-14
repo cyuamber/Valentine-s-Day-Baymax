@@ -5,18 +5,51 @@
     <meta charset="UTF-8">
     <title>Happy Valentine's Day!</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
+    <script src='js/jquery.min.js'></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
 </head>
-
 <body>
-    <canvas id="canvas"></canvas>
-    <div class="title">Happy Valentine's Day!</div>
-    <img src="./assets/bg.jpeg" class="bgpicture" />
-</body>
+    <div id="fullpage">
+        <div class="section first-page">
+            <div class="first-page-text">
+                <p>Hi, 小姐姐</p>
+                <p>为之前的不当言论向你道歉</p>
+                <p>在这个飘雪的情人节</p>
+                <p>祝你一切都好</p>
+                <p>From X.R.</p>
+                <p>2019.2.14</p>
+            </div>
+            <div>
+                <p></p>
+            </div>
 
+        </div>
+        <div class="section">
+            <canvas id="canvas" class="animated infinite pulse delay-2s"></canvas>
+            <div class="title">Happy Valentine's Day!</div>
+            <img src="./assets/bg.jpeg" class="bgpicture" />
+            <div class="extra-block belly" onclick="clickBody(1)"></div>
+            <div class="extra-block left-hand" onclick="clickBody(2)"></div>
+            <div class="extra-block right-hand" onclick="clickBody(3)"></div>
+            <div class="extra-block shy" onclick="clickBody(4)"></div>
+            <div class="extra-block shy-text" id="secret-block">密</div>
+        </div>
+    </div>
+</body>
 <script src='js/FastBlur.js'></script>
-<script src='js/jquery.min.js'></script>
+<script src='js/ClickEvent.js'></script>
 <script src="js/index.js"></script>
 <script type="text/javascript">
+ 	$('#fullpage').fullpage({
+        scrollHorizontally: true,
+        scrollBar: true,
+        verticalCentered: true,
+	});
+    $.fn.fullpage.setAllowScrolling(true);
     $(document).ready(function () {
         $("#canvas").click(function () {
             $(".title").animate({ opacity: 1 }, "slow", "swing");
@@ -25,3 +58,6 @@
 </script>
 
 </html>
+
+<!-- Forgive me -->
+<!-- For HL. -->

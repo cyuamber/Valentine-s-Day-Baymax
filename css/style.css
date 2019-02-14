@@ -1,10 +1,30 @@
 body{
-    background:#b01d1d; 
+    background:#b01d1d;
     margin:0;
     padding: 0;
     overflow: hidden;
   }
-  
+  .first-page{
+    color: beige;
+    background: linear-gradient(90deg,deeppink 0%,tomato 100%);
+    background-position: 0 0;
+    background-size: 200%,100%;
+    animation: changebg 3s linear infinite alternate;
+
+  }
+@keyframes changebg{
+    0%{background-position: 0 0;}
+    100%{background-position: 100% 0;}
+  }
+  .first-page-text{
+    font-size: 50px;
+    padding: 50px;
+  }
+  .first-page-text>p:nth-child(5),.first-page-text>p:nth-child(6){
+    text-align: right;
+    font-size: 30px;
+  }
+
   canvas {
     width:26%;
     height:26%;
@@ -13,7 +33,7 @@ body{
     top: 33%;
     z-index: 1;
   }
-  
+
   div.metadata {
     position: absolute;
     bottom:0;
@@ -39,12 +59,12 @@ body{
     padding: 0 4px 1px 4px;
     border-bottom: 4px solid rgba(254,121,68,0.4);
   }
-  
+
   div.title {
     position: absolute;
     opacity: 0;
     top:18%;
-    width: 100%; 
+    width: 100%;
     text-align:center;
     font-family: 'Lato', sans-serif !important;
     font-style: normal;
@@ -59,4 +79,46 @@ body{
       position: absolute;
       top: 30%;
       opacity: 0.8;
+  }
+  .extra-block{
+    width: 100px;
+    height: 100px;
+    background: black;
+    border: none;
+    position: absolute;
+    opacity: 0;
+  }
+  .belly{
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    left: 50%;
+  }
+  .left-hand{
+    top: 42%;
+    left: 14%;
+  }
+  .right-hand{
+    top: 65%;
+    left: 72%;
+  }
+  .shy{
+    top: 72%;
+    left: 49%;
+    z-index: 3;
+  }
+  .shy-text{
+    top: 72%;
+    left: 49%;
+    background: #fff;
+    border-radius: 50%;
+    border: #b01d1d 3px solid;
+    color: #b01d1d;
+    opacity: 0;
+    font-size: 50px;
+    text-align: center;
+    line-height:100px;
+  }
+  .totalopacity{
+    opacity: 1;
   }
